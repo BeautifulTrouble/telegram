@@ -19,10 +19,10 @@ exports.load = function() {
     var token = exports.config.token;
     offset = config.get('offset');
     bot = new TelegramBot(token, {
+        polling: true,
         // all options to 'tgfancy' MUST be placed under the
         // 'tgfancy' key, as shown below
         tgfancy: {
-            polling: "true",
         },
     });
 
